@@ -1,0 +1,9 @@
+{
+	"name": "okitsme1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "87b4c5d3-f2b9-44c9-9a5e-7abc8bccfc97",
+		"tenantId": "a0444911-b46c-4c38-a547-722ec7945944"
+	}
+}
