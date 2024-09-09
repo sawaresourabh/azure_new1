@@ -1,0 +1,27 @@
+{
+	"name": "tumbling_trigger1",
+	"properties": {
+		"description": "this is my demo tumbling_trigger for the datafactory okitsme1",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "copy_activity",
+				"type": "PipelineReference"
+			}
+		},
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Hour",
+			"interval": 1,
+			"startTime": "2024-09-09T18:00:00Z",
+			"endTime": "2024-09-11T06:00:00Z",
+			"delay": "00:00:00",
+			"maxConcurrency": 50,
+			"retryPolicy": {
+				"intervalInSeconds": 30
+			},
+			"dependsOn": []
+		}
+	}
+}
