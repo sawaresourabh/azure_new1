@@ -11,6 +11,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"okitsme1_trigger1_properties_copy_activity_parameters_input": {
+			"type": "string",
+			"defaultValue": "10"
+		},
+		"okitsme1_trigger1_properties_copy_activity_parameters_outout": {
+			"type": "string",
+			"defaultValue": "11"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +48,12 @@
 					},
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"okitsme1_trigger1_properties_copy_activity_parameters_input": {
+						"value": "[parameters('okitsme1_trigger1_properties_copy_activity_parameters_input')]"
+					},
+					"okitsme1_trigger1_properties_copy_activity_parameters_outout": {
+						"value": "[parameters('okitsme1_trigger1_properties_copy_activity_parameters_outout')]"
 					}
 				}
 			},
