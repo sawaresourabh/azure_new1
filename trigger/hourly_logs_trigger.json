@@ -1,0 +1,27 @@
+{
+	"name": "hourly_logs_trigger",
+	"properties": {
+		"description": "this is for hourly_log_pipeline ",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "hourly_logs_pipeline",
+				"type": "PipelineReference"
+			}
+		},
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Hour",
+			"interval": 1,
+			"startTime": "2024-09-10T12:00:00Z",
+			"endTime": "2024-09-11T12:00:00Z",
+			"delay": "00:00:00",
+			"maxConcurrency": 50,
+			"retryPolicy": {
+				"intervalInSeconds": 30
+			},
+			"dependsOn": []
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "hourly_logs_pipeline",
+	"properties": {
+		"annotations": []
+	}
+}
