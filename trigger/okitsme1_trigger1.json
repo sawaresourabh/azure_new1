@@ -1,0 +1,38 @@
+{
+	"name": "okitsme1_trigger1",
+	"properties": {
+		"description": "this is my first trigger for the data factory okitsme1",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copy_activity",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"input": "10",
+					"outout": "11"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-09-09T11:48:00",
+				"endTime": "2024-09-11T00:00:00",
+				"timeZone": "India Standard Time",
+				"schedule": {
+					"minutes": [
+						0
+					],
+					"hours": [
+						10
+					]
+				}
+			}
+		}
+	}
+}

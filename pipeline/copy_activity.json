@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1_execute",
+	"name": "copy_activity",
 	"properties": {
 		"activities": [
 			{
