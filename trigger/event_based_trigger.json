@@ -9,6 +9,10 @@
 				"pipelineReference": {
 					"referenceName": "copy_activity",
 					"type": "PipelineReference"
+				},
+				"parameters": {
+					"input": "@triggerbody().folderpath",
+					"output": "@triggerbody().filename"
 				}
 			}
 		],

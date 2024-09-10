@@ -51,7 +51,7 @@
 			"input": {
 				"type": "string"
 			},
-			"outout": {
+			"output": {
 				"type": "string"
 			}
 		},
