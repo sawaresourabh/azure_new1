@@ -4,18 +4,7 @@
 		"description": "this is the event based trigger demo",
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "copy_activity",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"input": "@triggerbody().folderpath",
-					"output": "@triggerbody().filename"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/containerdemo/blobs/text_folder/",
