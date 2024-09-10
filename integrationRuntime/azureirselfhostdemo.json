@@ -1,0 +1,19 @@
+{
+	"name": "azureirselfhostdemo",
+	"properties": {
+		"type": "Managed",
+		"description": "this is the self-hosted and integerated with the azure ir ---example ",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Australia East",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLive": 10,
+					"cleanup": false,
+					"customProperties": []
+				}
+			}
+		}
+	}
+}
