@@ -1,0 +1,27 @@
+{
+	"name": "event_based_trigger",
+	"properties": {
+		"description": "this is the event based trigger demo",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copy_activity",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/containerdemo/blobs/text_folder/",
+			"blobPathEndsWith": "https://storagedemosourabh.blob.core.windows.net/containerdemo/text_folder/python",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/727537e5-851f-4bc1-831a-33eb1213f843/resourceGroups/data_factory/providers/Microsoft.Storage/storageAccounts/storagedemosourabh",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
