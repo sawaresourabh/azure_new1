@@ -12,7 +12,7 @@
 				},
 				"parameters": {
 					"input": "10",
-					"outout": "11"
+					"output": "11"
 				}
 			}
 		],
