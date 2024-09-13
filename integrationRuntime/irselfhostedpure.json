@@ -1,7 +1,0 @@
-{
-	"name": "irselfhostedpure",
-	"properties": {
-		"type": "SelfHosted",
-		"description": "this is the demo for creating the irselfhosting as we know it work with public and private as well and above all is used for private network more , so this is going to connect the ir with the cloud to private and vice versa and also cloud to cloud and private to private"
-	}
-}
